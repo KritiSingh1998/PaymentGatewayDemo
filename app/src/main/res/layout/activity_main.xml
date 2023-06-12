@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="160dp"
+    android:paddingBottom="18dp"
+    android:paddingHorizontal="18dp">
+
+    <TextView
+        android:id="@+id/ad_heading"
+        style="@style/Heading.XBold.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Express yourself"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ad_subheading"
+        style="@style/Heading.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Notes allow you to express yourself\nin words.It is the best way\nto grab someone's attention"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ad_heading" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upgrade_button"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:text="Upgrade"
+        app:layout_constraintBottom_toBottomOf="@id/ad_subheading"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
